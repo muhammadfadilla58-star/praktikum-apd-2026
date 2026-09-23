@@ -17,8 +17,8 @@ hobi = "main catur"
 print (nama)
 print(hobi)
 
-print('''nama saya fadil
-hobi saya main catur''')
+print ("nama saya fadil")
+print ("hobi saya main catur")
 
 print("aku"+"rajin")
 
@@ -79,3 +79,4 @@ zidan = {
 ...
 # Mengakses Value dalam Dictionary
 print(zidan['siang'])
+
