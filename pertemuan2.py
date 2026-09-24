@@ -8,17 +8,17 @@ if umur >= 17:
     print("Kamu sudah bisa membuat KTP") # Blok if dijalankan karena
 
 else:
-    print("Kamu belum bisa membuat KTP")''' # Blok else tidak dijalankan
+    print("Kamu belum bisa membuat KTP") # Blok else tidak dijalankan
 
 
-'''kendaraan = input("Masukkan jenis kendaraan anda: ")
+kendaraan = input("Masukkan jenis kendaraan anda: ")
 if kendaraan == "mobil":    
     tarif_parkir = 10000
 elif kendaraan == "motor":
     tarif_parkir = 5000
 else:
     tarif_parkir = 15000
-print("Tarif parkir yang harus dibayar:", tarif_parkir)'''
+print("Tarif parkir yang harus dibayar:", tarif_parkir)
 
 #program harus input nilai
 #jika nilai > 90 A
@@ -26,7 +26,7 @@ print("Tarif parkir yang harus dibayar:", tarif_parkir)'''
 #jika nilai > C 70
 #nilai > 50 dan < 69 D
 
-'''nilai = int(input("Masukkan nilai: "))
+nilai = int(input("Masukkan nilai: "))
 if nilai > 90:
     print("Nilai anda A")
 elif nilai > 80:
@@ -36,7 +36,7 @@ elif nilai >= 70:
 elif nilai >= 50 and nilai <= 69:
     print("Nilai anda D")
 else:
-    print("Nilai anda E")'''
+    print("Nilai anda E")
 
 umur = 20
 status = "Dewasa" if umur >= 18  else "Belum Dewasa"
@@ -62,5 +62,38 @@ elif total_pembelian > 100000:
 elif total_pembelian == 100000 or total_pembelian < 100000:
     diskon = total_pembelian * 0
     total_bayar = total_pembelian - diskon
-    print("Total yang harus dibayar:", total_bayar)
+    print("Total yang harus dibayar:", total_bayar)'''
+
+
+
+
+
+
+
+
+
+
+
+Buah = ["Apel", "Anggur", "Jeruk"]
+print (Buah[1]) # Output: Anggur
+
+
+
+Buah.append("Mangga") # Menambahkan elemen baru ke dalam list
+Buah.remove("Jeruk") # Menghapus elemen dari list
+Buah[1] = "Pisang" # Mengubah elemen pada indeks tertentu
+
+
+
+
+
+
+
+
+nilai = [80, 85, 90, 75, 88]
+rata_rata = sum(nilai) / len(nilai)
+print(nilai)
+print(rata_rata)
+
+
 
