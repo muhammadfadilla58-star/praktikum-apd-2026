@@ -72,8 +72,6 @@ elif total_pembelian == 100000 or total_pembelian < 100000:
 
 
 
-
-
 Buah = ["Apel", "Anggur", "Jeruk"]
 print (Buah[1]) # Output: Anggur
 
