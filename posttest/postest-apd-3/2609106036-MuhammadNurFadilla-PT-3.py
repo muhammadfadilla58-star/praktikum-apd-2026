@@ -61,5 +61,3 @@ if username == nama and password == nim:
 
 else:
   print("ERROR!")
-
-  
