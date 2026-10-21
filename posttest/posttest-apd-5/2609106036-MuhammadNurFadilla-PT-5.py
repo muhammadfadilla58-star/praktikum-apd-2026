@@ -77,10 +77,14 @@ while True:
                         indeks = input("Masukkan Indeks Minuman yang Ingin di Ganti: ")
                         if indeks.isdigit():
                             indeks = int(indeks)
-                            if int(indeks) < len(daftar_minuman):
+                            if indeks < len(daftar_minuman):
                                 harga_baru = input("Masukkan Harga Baru: ")
-                                daftar_minuman[int(indeks)][1] = int(harga_baru)
-                                input("Tekan Enter Untuk Kembali...")
+                                if harga_baru.isdigit():
+                                    daftar_minuman[int(indeks)][1] = int(harga_baru)
+                                    input("Tekan Enter Untuk Kembali...")
+                                else:
+                                    print("Hanya Menerima Input Angka!")
+                                    input("Tekan Enter Untuk Kembali...")        
                             else:
                                 print("Jangkauan Tidak Tersedia!")
                                 input("Tekan Enter Untuk Kembali...")
@@ -91,10 +95,14 @@ while True:
                         indeks = input("Masukkan Indeks yang Ingin di Ganti: ")
                         if indeks.isdigit():
                             indeks = int(indeks)
-                            if int(indeks) < len(daftar_minuman):
+                            if indeks < len(daftar_minuman):
                                 stok_baru = input("Masukkan Stok Baru: ")
-                                daftar_minuman[int(indeks)][2] = int(stok_baru)
-                                input("Tekan Enter Untuk Kembali...")
+                                if stok_baru.isdigit():
+                                    daftar_minuman[int(indeks)][2] = int(stok_baru)
+                                    input("Tekan Enter Untuk Kembali...")
+                                else:
+                                    print("Hanya Menerima Input Angka!")
+                                    input("Tekan Enter Untuk Kembali...")    
                             else:
                                 print("Jangkauan Tidak Tersedia!")
                                 input("Tekan Enter Untuk Kembali...")   
@@ -108,7 +116,7 @@ while True:
                     hapus = input("Data Mana yang Ingin Anda Hapus: ")
                     if hapus.isdigit():
                         hapus = int(hapus)
-                        if int(hapus) < len(daftar_minuman):
+                        if hapus < len(daftar_minuman):
                             del daftar_minuman[int(hapus)]
                             print("Data Berhasil Dihapus!")
                             input("Tekan Enter Untuk Kembali...")
