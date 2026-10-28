@@ -74,6 +74,3 @@ print(chara)'''
 
 
 
-a = input("masukkan sesutu: ")
-b = a.isascii()
-print(b)
